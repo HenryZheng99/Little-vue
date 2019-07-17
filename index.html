@@ -11,24 +11,5 @@
     <div>the time is: {{ time }}</div>
     <br/>
 </div>
-
-<script src="./little-vue.js"></script>
-<script>
-const n = new Vue({
-    el: '#app',
-    data: {
-        text:'Vue',
-        time: new Date(),
-        title: {
-            greeting: ['h', 'e', 'l', 'l', 'o', '!'],
-        }
-    }
-});
-
-setInterval(() => {
-    n.time = new Date();
-}, 1000);
-
-</script>
 </body>
 </html>
