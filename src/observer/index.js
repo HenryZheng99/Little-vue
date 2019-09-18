@@ -1,8 +1,15 @@
+/*
+ * @Author: 郑浩瀚
+ * @Date: 2019-07-17 09:40:01
+ * @LastEditors: 郑浩瀚
+ * @LastEditTime: 2019-07-17 09:40:01
+ * @Description: 
+ */
 import Dep from '../dependence';
 
 // Observer
 /**
- * 监听data
+ * 监听data，劫持数据
  * @param {*} data 
  */
 function observe (data) {

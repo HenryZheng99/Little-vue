@@ -9,7 +9,7 @@ import { expToFunc } from '../util';
 class Watcher {
     constructor (exp, scope, callback) {
         this.value = null;// 存放当前编译结果
-        this.getValue = expToFunc(exp, scope);// 生成编译结果的函数
+        this.getValue = expToFunc(exp, scope);// 生成编译结果的函数,获取$data各value
         this.callback = callback;
         this.update();// 绑定时需要编译一次
     }

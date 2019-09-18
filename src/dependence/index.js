@@ -21,6 +21,6 @@ class Dep {
         }
     }
 }
-// Dep.target = null;
+Dep.target = null;
 
 export default Dep;

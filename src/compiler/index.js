@@ -27,7 +27,7 @@ function textToExp (text) {
 function compileText (node, scope) {
     let exp = textToExp(node.textContent);
     // Watcher绑定时会先编译一次，所以这里不需要再手动修改node.textContent
-    new Watcher(exp, scope, newVal => {
+    new Watcher(exp, scope, (newVal) => {
         node.textContent = newVal;
     });
 }
